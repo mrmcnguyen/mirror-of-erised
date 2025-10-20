@@ -1,0 +1,18 @@
+# Core dependencies for Mirror of Erised project
+numpy>=1.21.0
+sounddevice>=0.4.6
+pywhispercpp>=1.0.0
+piper-tts>=1.2.0
+simpleaudio>=1.0.4
+openai>=1.0.0
+pygame>=2.1.0
+Pillow>=9.0.0
+
+# Additional dependencies mentioned in comments
+soundfile>=0.12.0
+
+# Emotion detection dependencies
+opencv-python>=4.8.0
+mediapipe>=0.10.0
+deepface>=0.0.79
+tensorflow>=2.13.0
