@@ -36,7 +36,7 @@ import mediapipe as mp
 from deepface import DeepFace
 
 class MirrorOfErised:
-    def __init__(self, whisper_model="tiny-q5_1", piper_voice="en_US-lessac-medium.onnx", 
+    def __init__(self, whisper_model="tiny-q5_1", piper_voice="en_GB-alan-medium.onnx", 
                  sample_rate=16000, silence_threshold=0.01, silence_duration=2.0, 
                  openai_api_key=None, openai_model="gpt-4o-mini", 
                  images_dir="emotion_images", display_width=1024, display_height=600, 
@@ -751,7 +751,7 @@ class MirrorOfErised:
 def main():
     parser = argparse.ArgumentParser(description="Mirror of Erised Interactive Voice Interface")
     parser.add_argument("--whisper-model", default="tiny-q5_1", help="Whisper model name (default: tiny-q5_1)")
-    parser.add_argument("--piper-voice", default="en_GB-alan-medium.onnx", help="Piper voice model path")
+    parser.add_argument("--piper-voice", default="en_GB-alan-medium.onnx", help="Piper voice model path (default: en_GB-alan-medium.onnx - British English Alan)")
     parser.add_argument("--sample-rate", type=int, default=16000, help="Audio sample rate (default: 16000)")
     parser.add_argument("--silence-threshold", type=float, default=0.01, help="Silence detection threshold (default: 0.01)")
     parser.add_argument("--silence-duration", type=float, default=1.75, help="Silence duration before stopping (default: 1.75s)")
